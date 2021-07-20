@@ -7,54 +7,87 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
 
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS LINKS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+
     <title>Frontend Mentor | Social proof section</title>
 
   </head>
   <body>
-    <header>
-      <h1 class="title">10,00+ of our users love our products</h1>
-      <p class="textMain">We only provide great products cobined with excellent customer service.
-        See what our satisfied customers are saying about our services.
-      </p>
-    </header>
-
-    <article>
-      <div class="rated" id="ratedBox1">Rated 5 Stars in Reviews</div>
-      <div class="rated" id="ratedBox2">Rated 5 Stars in Report Guru</div>
-      <div class="rated" id="ratedBox3">Rated 5 Stars in BestTech</div>
-    </article>
-
-    <main>
-      <div class="review" id="reviewBox1">
-        <figure class="portrait"><img src="#" alt="#"/></figure>
-        <h2 class="nameTitle">Colton Smith</h2>
-        <h3 class="verified">Verified Buyer</h3>
-        <p class="reviewText">"We needed the same printed design as the one we had ordered a week prior.
-          Not only did they find the original order, but we also received it in time.
-          Excellent!"</p>
+    <div class="container">
+      <div class="line1">
+      <header>
+        <h1 class="title">10,00+ of our users love our products.</h1>
+        <p class="textMain">We only provide great products cobined with excellent customer service.
+          See what our satisfied customers are saying about our services.
+        </p>
+      </header>
+      <article>
+        <div class="box rated" id="ratedBox1">
+          <img src="images/icon-star.svg" class="starIcon" />
+          <img src="images/icon-star.svg" class="starIcon" />
+          <img src="images/icon-star.svg" class="starIcon" />
+          <img src="images/icon-star.svg" class="starIcon" />
+          <img src="images/icon-star.svg" class="starIcon" />
+          <div><strong>Stars in Reviews</strong></div>
+          </div>
+        <div class="box rated" id="ratedBox2">
+          <img src="images/icon-star.svg" class="starIcon" />
+          <img src="images/icon-star.svg" class="starIcon" />
+          <img src="images/icon-star.svg" class="starIcon" />
+          <img src="images/icon-star.svg" class="starIcon" />
+          <img src="images/icon-star.svg" class="starIcon" />
+          <div><strong>5 Stars in Report Guru</strong></div>
+        </div>
+        <div class="box rated" id="ratedBox2">
+          <img src="images/icon-star.svg" class="starIcon" />
+          <img src="images/icon-star.svg" class="starIcon" />
+          <img src="images/icon-star.svg" class="starIcon" />
+          <img src="images/icon-star.svg" class="starIcon" />
+          <img src="images/icon-star.svg" class="starIcon" />
+          <div><strong>Rated 5 Stars in BestTech</strong></div>
+        </div>
+      </article>
+    </div>
+    <div class="line2">
+      <main>
+        <div class="box review" id="reviewBox2">
+          <figure><img src="images/image-colton.jpg" alt="Irene portrait" width="15%" class="portrait"/></figure>
+          <p class="nameTitle">Colton Smith</p>
+          <p class="verified">Verified Buyer</p>
+          <p class="reviewText">"We needed the same printed design as the one we had ordered a week prior.
+            Not only did they find the original order, but we also received it in time.
+            Excellent!"</p>
+        </div>
+        <div class="box review" id="reviewBox2">
+          <figure><img src="images/image-irene.jpg" alt="Irene portrait" width="15%" class="portrait"/></figure>
+          <p class="nameTitle">Irene Roberts</p>
+          <p class="verified">Verified Buyer</p>
+          <p class="reviewText">"Customer service is always excellent and very quick turn around. Completely
+            delighted with the simplicity of the purchase and the speed of delivery."</p>
+        </div>
+        <div class="box review" id="reviewBox3">
+          <figure><img src="images/image-anne.jpg" alt="Anne portrait" width="15%" class="portrait"/></figure>
+          <p class="nameTitle">Anne Roberts</p>
+          <p class="verified">Verified Buyer</p>
+          <p class="reviewText">"Put an order with this company and can only praise them for the very high
+            standard. Will definitely use them again and recommend them to everyone!"</p>
+        </div>
+      </main>
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >.<br>Coded by <a href="https://github.com/WillianMstach">Willian Mstach</a>.
+        </div>
       </div>
-      <div class="review" id="reviewBox2">
-        <figure class="portrait"><img src="#" alt="#"/></figure>
-        <h2 class="nameTitle">Irene Roberts</h2>
-        <h3 class="verified">Verified Buyer</h3>
-        <p class="reviewText">"Customer service is always excellent and very quick turn around. Completely
-          delighted with the simplicity of the purchase and the speed of delivery."</p>
-      </div>
-      <div class="review" id="reviewBox3">
-        <figure class="portrait"><img src="#" alt="#"/></figure>
-        <h2 class="nameTitle">Anne Roberts</h2>
-        <h3 class="verified">Verified Buyer</h3>
-        <p class="reviewText">"Put an order with this company and can only praise them for the very high
-          standard. Will definitely use them again and recommend them to everyone!"</p>
-      </div>
-    </main>
-    <footer>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/WillianMstach">Willian Mstach</a>.
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

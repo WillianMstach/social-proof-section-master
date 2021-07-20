@@ -1,0 +1,114 @@
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+/*-------------------------- BODY --------------------------*/
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: left, right;
+  background-position-y: 0, 100%;
+}
+
+h1 {
+  color: hsl(300, 43%, 22%);
+}
+
+p {
+  color: hsl(303, 10%, 53%);
+}
+
+header, article, main {
+  margin-bottom: 6vh;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: hsl(300, 43%, 22%);
+}
+
+
+/*-------------------------- GRID --------------------------*/
+.container {
+  display: grid;
+  grid-template-columns: 1f;
+  grid-template-rows: 1f 1f;
+  grid-template-areas: "cards" "review";
+  width: 88vw;
+  margin: 15vw 6vw;
+}
+
+.line1 {
+  grid-area: cards;
+}
+
+.line2 {
+  grid-area: review;
+}
+
+/*-------------------------- HEADER --------------------------*/
+header h1 {
+  width: 80%;
+  margin: 0 auto 5%;
+  text-align: center;
+}
+
+header p {
+  text-align: center;
+}
+
+/*-------------------------- RATED --------------------------*/
+.box {
+  border-radius: 10px;
+  margin-bottom: 3vh;
+}
+
+.rated {
+  background-color: hsl(300, 24%, 96%);
+  width: 100%;
+  text-align: center;
+  padding: 3vh;
+  color: hsl(300, 43%, 22%);
+}
+
+.starIcon {
+  margin: 0 2px 10px
+} 
+
+/*-------------------------- REVIEW --------------------------*/
+.review {
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  padding: 10%;
+}
+
+.nameTitle {
+  color: white;
+  margin-top: 1%;
+}
+
+.verified {
+  color: hsl(333, 80%, 67%);
+  margin-top: 1%;
+}
+
+.reviewText {
+  margin-top: 10%;
+  color: white;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+/*-------------------------- PORTRAIT --------------------------*/
+.portrait {
+  border-radius: 50%;
+  float: left;
+  margin-right: 8%;
+}
+
+
+.attribution {
+  text-align: center;
+}
